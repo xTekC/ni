@@ -48,6 +48,7 @@ pub fn active_ipv6_address() {
 }
 
 pub fn all_network_info() {
+    println!();
     for iface in datalink::interfaces() {
         let mac_address = match iface.mac {
             Some(mac) => mac.to_string(),
