@@ -17,7 +17,7 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 AUTHOR_NAME="xTekC"
-BIN_NAME="ndi"
+BIN_NAME="ni"
 
 detect_architecture() {
 	case "$(uname -s)" in
@@ -219,7 +219,7 @@ manual() {
   purple_printf "Append ${NC}$BIN_NAME${PURPLE} bin dir to shell config file:\n"
   SHELL_CONFIG_FILE=$(detect_shell)
   if [ "$SHELL_CONFIG_FILE" != "unknown" ]; then
-    echo "echo 'export PATH=\"\$PATH:\$HOME/ndi/bin\"' >> \$HOME/$SHELL_CONFIG_FILE"
+    echo "echo 'export PATH=\"\$PATH:\$HOME/ni/bin\"' >> \$HOME/$SHELL_CONFIG_FILE"
     purple_printf "\nSource the shell config file:\n"
     echo "source \$HOME/$SHELL_CONFIG_FILE"
   else

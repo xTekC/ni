@@ -7,12 +7,12 @@
 
 #![allow(unused)]
 use clap::Parser;
-use ndi::xcore::core::{
+use ni::xcore::core::{
     active_interface_name, active_ipv4_address, active_ipv6_address, all_network_info,
 };
 use owo_colors::OwoColorize;
 
-/// Get Network Device Information
+/// Get Network Information
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 pub struct Args {

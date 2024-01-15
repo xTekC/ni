@@ -11,10 +11,9 @@ use std::net::IpAddr;
 
 pub fn active_interface_name() {
     for iface in datalink::interfaces() {
-        // Check if the interface has an IP starting with 192.168
         if iface.ips.iter().any(|ip| matches!(ip.ip(), IpAddr::V4(ipv4_addr) if ipv4_addr.to_string().starts_with("192.168"))) {
-            println!("{}", iface.name.yellow());
-        }
+             println!("{}", iface.name.yellow());
+         }
     }
 }
 
@@ -33,10 +32,8 @@ pub fn active_ipv4_address() {
 
 pub fn active_ipv6_address() {
     for iface in datalink::interfaces() {
-        // Check if the interface has an IPv4 address starting with 192.168
         let has_ipv4_192 = iface.ips.iter().any(|ip| matches!(ip.ip(), IpAddr::V4(ipv4_addr) if ipv4_addr.to_string().starts_with("192.168")));
 
-        // If such an interface is found, print its IPv6 addresses
         if has_ipv4_192 {
             for ip in iface.ips {
                 if let IpAddr::V6(ipv6_addr) = ip.ip() {
