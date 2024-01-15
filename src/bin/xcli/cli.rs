@@ -16,7 +16,7 @@ use owo_colors::OwoColorize;
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 pub struct Args {
-    /// All
+    /// All Network Information
     #[arg(short, long)]
     all: bool,
 }
