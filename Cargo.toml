@@ -1,7 +1,7 @@
 [package]
 name = "ndi"
 version = "0.0.0"
-description = "..."
+description = "Get Network Device Information"
 authors = ["xTekC"]
 repository = "https://github.com/xTekC/ndi"
 readme = "README.md"
