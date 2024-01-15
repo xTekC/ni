@@ -7,7 +7,7 @@
 
 To check a box, update "[ ]" to "[x]"
 
-Make sure to read the [Pull Request Guidelines](https://github.com/xTekC/ni/CONTRIBUTING.md#pull-request-guidelines).
+Make sure to read the [Pull Request Guidelines](https://github.com/xTekC/ndi/CONTRIBUTING.md#pull-request-guidelines).
 
 ## Description
 

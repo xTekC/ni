@@ -1,15 +1,15 @@
 <div align="center">
 
-# ni
-Get Network Information
+# ndi
+Get Network Device Information
 
-<!-- <a href="https://crates.io/crates/ni/"><img src="https://img.shields.io/crates/v/ni?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=Rust&amp;logoColor=white" alt="Crate Release"></a> -->
+<!-- <a href="https://crates.io/crates/ndi/"><img src="https://img.shields.io/crates/v/ndi?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=Rust&amp;logoColor=white" alt="Crate Release"></a> -->
 <br>
-<a href="https://github.com/xTekC/ni/actions?query=workflow%3A%22Continuous+Integration%22"><img src="https://img.shields.io/github/actions/workflow/status/xTekC/ni/ci.yml?branch=main&amp;style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=GitHub%20Actions&amp;logoColor=white&amp;label=Build" alt="Continuous Integration"></a>
-<a href="https://github.com/xTekC/ni/actions?query=workflow%3A%22Continuous+Deployment%22"><img src="https://img.shields.io/github/actions/workflow/status/xTekC/ni/cd.yml?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=GitHub%20Actions&amp;logoColor=white&amp;label=Release" alt="Continuous Deployment"></a>
-<!-- <a href="https://docs.rs/ni/"><img src="https://img.shields.io/docsrs/ni?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=Rust&amp;logoColor=white" alt="Documentation"></a> -->
+<a href="https://github.com/xTekC/ndi/actions?query=workflow%3A%22Continuous+Integration%22"><img src="https://img.shields.io/github/actions/workflow/status/xTekC/ndi/ci.yml?branch=main&amp;style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=GitHub%20Actions&amp;logoColor=white&amp;label=Build" alt="Continuous Integration"></a>
+<a href="https://github.com/xTekC/ndi/actions?query=workflow%3A%22Continuous+Deployment%22"><img src="https://img.shields.io/github/actions/workflow/status/xTekC/ndi/cd.yml?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=GitHub%20Actions&amp;logoColor=white&amp;label=Release" alt="Continuous Deployment"></a>
+<!-- <a href="https://docs.rs/ndi/"><img src="https://img.shields.io/docsrs/ndi?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=Rust&amp;logoColor=white" alt="Documentation"></a> -->
 
-[![GitHub license](https://img.shields.io/github/license/xTekC/ni.svg?style=flat&labelColor=032a1a&color=065535&logo=GitHub&logoColor=black&label=License)](https://github.com/xTekC/ni/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/xTekC/ndi.svg?style=flat&labelColor=032a1a&color=065535&logo=GitHub&logoColor=black&label=License)](https://github.com/xTekC/ndi/blob/main/LICENSE)
 
 [![Buy Me A Coffee](assets/bmac_orange.gif)](https://www.buymeacoffee.com/xTekC)
 <br> **Buy Me A Coffee? <3** 
@@ -44,10 +44,10 @@ Get Network Information
 
 <br>
 
-Unix-Like [Install](https://github.com/xTeKc/ni/blob/main/scripts/install.sh)<br>
+Unix-Like [Install](https://github.com/xTeKc/ndi/blob/main/scripts/install.sh)<br>
 
 ```
-curl -sSL https://raw.githubusercontent.com/xTeKc/ni/main/scripts/install.sh | sh
+curl -sSL https://raw.githubusercontent.com/xTeKc/ndi/main/scripts/install.sh | sh
 ```
 
 <br>
@@ -55,7 +55,7 @@ curl -sSL https://raw.githubusercontent.com/xTeKc/ni/main/scripts/install.sh | s
 **Cargo**
 
 ```
-cargo install --git https://github.com/xTekC/ni --branch main --locked --profile rel-opt
+cargo install --git https://github.com/xTekC/ndi --branch main --locked --profile rel-opt
 ```
 
 <br>
@@ -63,7 +63,7 @@ cargo install --git https://github.com/xTekC/ni --branch main --locked --profile
 ## Usage
 
 ```
-ni -h
+ndi -h
 ```
 
 <br>
@@ -78,10 +78,10 @@ ni -h
 
 <br>
 
-Unix-Like [Uninstall](https://github.com/xTeKc/ni/blob/main/scripts/uninstall.sh)
+Unix-Like [Uninstall](https://github.com/xTeKc/ndi/blob/main/scripts/uninstall.sh)
 
 ```
-curl -sSL https://raw.githubusercontent.com/xTeKc/ni/main/scripts/uninstall.sh | sh
+curl -sSL https://raw.githubusercontent.com/xTeKc/ndi/main/scripts/uninstall.sh | sh
 ```
 
 <br>
@@ -89,7 +89,7 @@ curl -sSL https://raw.githubusercontent.com/xTeKc/ni/main/scripts/uninstall.sh |
 **Cargo**
 
 ```
-cargo uninstall ni
+cargo uninstall ndi
 ```
 
 <br>
@@ -100,13 +100,13 @@ Read the [Contributing Guide](CONTRIBUTING.md) before making a pull request.
 <br>
 
 ## Donate
-If you value ni, consider supporting its progress:
+If you value ndi, consider supporting its progress:
 
 <!-- - [GitHub Sponsors](https://github.com/sponsors/xTekC) -->
 - [Buy Me A Coffee](https://www.buymeacoffee.com/xTekC)
 <!-- - [Ko-fi](https://ko-fi.com/xTekC) -->
 
-Your generous donations will help fuel the ongoing development of ni. <br>
+Your generous donations will help fuel the ongoing development of ndi. <br>
 Thank you!
 
 <br>

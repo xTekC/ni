@@ -133,29 +133,29 @@ jobs:
       - name: Prepare release assets
         shell: bash
         run: |
-          mkdir -p ni/bin
-          cp {.github/CODEOWNERS,LICENSE,CHANGELOG.md} ni/
-          echo "${{ github.ref_name }}" > ni/VERSION
-          for bin in 'ni'; do
+          mkdir -p ndi/bin
+          cp {.github/CODEOWNERS,LICENSE,CHANGELOG.md} ndi/
+          echo "${{ github.ref_name }}" > ndi/VERSION
+          for bin in 'ndi'; do
             if [ "${{ matrix.build.OS }}" = "windows-latest" ]; then
               bin="${bin}.exe"
             fi
-            cp "target/${{ matrix.build.TARGET }}/rel-opt/${bin}" ni/bin
+            cp "target/${{ matrix.build.TARGET }}/rel-opt/${bin}" ndi/bin
           done
 
       - name: Create release artifacts
         shell: bash
         run: |
           if [ "${{ matrix.build.OS }}" = "windows-latest" ]; then
-            7z a -tzip "ni-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip" \
-              ni/
-            CertUtil -hashfile "ni-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip" SHA512 \
-              > ni-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip.sha512
+            7z a -tzip "ndi-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip" \
+              ndi/
+            CertUtil -hashfile "ndi-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip" SHA512 \
+              > ndi-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip.sha512
           else
-            tar -czvf ni-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz \
-              ni/
-            shasum -a 512 ni-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz \
-              > ni-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz.sha512
+            tar -czvf ndi-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz \
+              ndi/
+            shasum -a 512 ndi-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz \
+              > ndi-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz.sha512
           fi
 
       # - name: Sign the release
@@ -165,12 +165,12 @@ jobs:
       #       --passphrase-fd 0 --import private.key
       #     echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --pinentry-mode=loopback \
       #       --passphrase-fd 0 --detach-sign \
-      #       ni-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz
+      #       ndi-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz
 
       - name: Upload the binary releases
         uses: svenstaro/upload-release-action@v2
         with:
-          file: "ni-${{ github.ref_name }}-${{ matrix.build.TARGET }}*"
+          file: "ndi-${{ github.ref_name }}-${{ matrix.build.TARGET }}*"
           file_glob: true
           overwrite: true
           tag: ${{ github.ref }}

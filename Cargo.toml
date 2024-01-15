@@ -1,15 +1,15 @@
 [package]
-name = "ni"
+name = "ndi"
 version = "0.0.0"
-description = "Get Network Information"
+description = "Get Network Device Information"
 authors = ["xTekC"]
-repository = "https://github.com/xTekC/ni"
+repository = "https://github.com/xTekC/ndi"
 readme = "README.md"
-homepage = "https://github.com/xTekC/ni"
-documentation = "https://github.com/xTekC/ni/blob/main/README.md"
+homepage = "https://github.com/xTekC/ndi"
+documentation = "https://github.com/xTekC/ndi/blob/main/README.md"
 categories = ["command-line-utilities", "development-tools"]
 keywords = ["cli", "async"]
-# default-run = "ni -h"
+# default-run = "ndi -h"
 publish = false
 # include = "[...]"
 # exclude = "[...]"
@@ -21,7 +21,7 @@ edition = "2021"
 license = "MPL-2.0"
 
 [[bin]]
-name = "ni"
+name = "ndi"
 path = "src/bin/main.rs"
 
 [dependencies]

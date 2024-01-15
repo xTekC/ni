@@ -16,7 +16,7 @@ red_printf() {
 	printf '%b\n' "${RED}$1${NC}"
 }
 
-BIN_NAME="ni"
+BIN_NAME="ndi"
 
 detect_architecture() {
 	case "$(uname -s)" in
@@ -144,11 +144,11 @@ remove_bin() {
 			red_printf "Removed ${NC}$BIN_NAME${RED} binary alias."
 		else
 			red_printf "Remove ${NC}$BIN_NAME${RED} from \$HOME:\n"
-			echo "cd \$HOME && rm -rf ni"
+			echo "cd \$HOME && rm -rf ndi"
 			echo ''
 			red_printf "Shell config detected as: ${NC}$(detect_shell)"
 			red_printf "Remove ${NC}$BIN_NAME${RED} bin dir from shell config file:\n"
-			echo "sed -i '/export PATH=\"\$PATH:\$HOME\/ni\/bin\"/d' \"\$HOME/$(detect_shell)\""
+			echo "sed -i '/export PATH=\"\$PATH:\$HOME\/ndi\/bin\"/d' \"\$HOME/$(detect_shell)\""
 			echo ''
 		fi
 
