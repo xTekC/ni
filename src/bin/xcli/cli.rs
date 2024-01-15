@@ -7,17 +7,30 @@
 
 #![allow(unused)]
 use clap::Parser;
-use ndi::xcore::core::*;
+use ndi::xcore::core::{
+    active_interface_name, active_ipv4_address, active_ipv6_address, all_network_info,
+};
+use owo_colors::OwoColorize;
 
 /// Get Network Device Information
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 pub struct Args {
-    /// ipaddress
+    /// All
     #[arg(short, long)]
-    ip: String,
+    all: bool,
 }
 
 pub async fn cli_main() {
-    let args = Args::parse();
+    let cli = Args::parse();
+
+    if cli.all {
+        all_network_info();
+    } else {
+        println!();
+        active_interface_name();
+        active_ipv4_address();
+        active_ipv6_address();
+        println!();
+    }
 }
