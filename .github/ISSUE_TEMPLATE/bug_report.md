@@ -7,25 +7,25 @@
 
 ---
 name: Bug report
-about: An issue with ndi or any of its crates (ignore, globset, etc.)
+about: An issue with ni or any of its crates (ignore, globset, etc.)
 title: ""
 labels: ""
 assignees: ""
 ---
 
-## Which version of ndi are you using?
+## Which version of ni are you using?
 
-Replace this text with the output of `ndi -V`.
+Replace this text with the output of `ni -V`.
 
-## How did you install ndi?
+## How did you install ni?
 
-Specify the method you used to install ndi, such as:
+Specify the method you used to install ni, such as:
 
 Using a package manager (e.g., apt-get, yum, brew)
 Manually downloading and compiling the source code
 Other (describe):
 
-## Which operating system are you using ndi on?
+## Which operating system are you using ni on?
 
 Replace this text with your operating system and version.
 
@@ -35,12 +35,12 @@ Give a high level description of the bug.
 
 ## What are the steps to reproduce the behavior?
 
-Provide both the search patterns and the data on which you are performing the search. If the issue is not obvious, including this information is crucial for the ndi maintainers to reproduce and fix the issue. If the data is too large to include, report the issue anyway and the ndi maintainers will assist in finding a solution.
+Provide both the search patterns and the data on which you are performing the search. If the issue is not obvious, including this information is crucial for the ni maintainers to reproduce and fix the issue. If the data is too large to include, report the issue anyway and the ni maintainers will assist in finding a solution.
 
 ## What is the actual behavior?
 
 Show the command you ran and the actual output. Include the `--debug` flag in
-your invocation of ndi.
+your invocation of ni.
 
 If the output is large, put it in a gist: https://gist.github.com/
 
@@ -55,7 +55,7 @@ here
 
 ## What is the expected behavior?
 
-What do you think ndi should have done?
+What do you think ni should have done?
 
 ## Additional Information
 

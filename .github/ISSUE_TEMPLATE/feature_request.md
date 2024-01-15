@@ -7,7 +7,7 @@
 
 ---
 name: Feature request
-about: Suggest a new feature for ndi
+about: Suggest a new feature for ni
 title: ""
 labels: ""
 assignees: ""
@@ -15,9 +15,9 @@ assignees: ""
 
 ## Describe your feature request
 
-Describe the behavior you would like to see in ndi and the motivation behind your request. 
-In addition, provide examples of how the feature would be used if it were added to ndi.
+Describe the behavior you would like to see in ni and the motivation behind your request. 
+In addition, provide examples of how the feature would be used if it were added to ni.
 
-If you're unsure about what to write, try imagining how your feature request would be documented in ndi's documentation. Write your description accordingly.
+If you're unsure about what to write, try imagining how your feature request would be documented in ni's documentation. Write your description accordingly.
 
 If your request pertains to the addition or modification of default file types, submit a pull request. We can discuss your proposal further there if necessary.
