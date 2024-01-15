@@ -1,7 +1,7 @@
 <div align="center">
 
 # ndi
-...
+Get Network Device Information
 
 <!-- <a href="https://crates.io/crates/ndi/"><img src="https://img.shields.io/crates/v/ndi?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=Rust&amp;logoColor=white" alt="Crate Release"></a> -->
 <br>
